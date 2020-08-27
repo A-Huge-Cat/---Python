@@ -83,7 +83,8 @@ print('你有十秒钟的时间拔出U盘')
 for i in range(10):
     print("还剩{}s".format(10-(i+1)))
     time.sleep(1)
-    
+control_the_machine("shutdown -s -t 0").restart()    
+
 
 
 
