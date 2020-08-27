@@ -73,10 +73,12 @@ class sendemail:
         
         except:
             return "信息发送失败"
-"""           
-message=" 操作系统信息:{}\n ip地址为{}\n 已经操作这台机器关机".format(get_system_information().system_information(),get_ip_address().ip_address())
+
+        
+message=" 操作系统信息:{}\n ip地址为{}\n 已经操作这台机器关机".format(get_system_information().system_information(),
+                                                                    get_ip_address().ip_address(),
+                                                                    time.asctime(time.localtime(time.time())))
 print(sendemail().send_email(message))
-"""
 print('你有十秒钟的时间拔出U盘')
 for i in range(10):
     print("还剩{}s".format(10-(i+1)))
