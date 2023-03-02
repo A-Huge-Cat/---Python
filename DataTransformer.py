@@ -66,6 +66,7 @@ class Voc2Yolo:
         return "Finish"
     
 
+
 src_path = "D:/目标检测/数据集/SCTD声呐数据集/VOC2007/Annotations/"
 target_path = "D:/目标检测/数据集/SCTD声呐数据集/VOC2007/YOLO/"
 voc2yolo = Voc2Yolo(src_path=src_path, 
